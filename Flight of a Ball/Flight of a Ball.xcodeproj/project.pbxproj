@@ -18,6 +18,8 @@
 		92D40F4E1919B92600C86E21 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D40F2D1919B92600C86E21 /* Cocoa.framework */; };
 		92D40F561919B92600C86E21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92D40F541919B92600C86E21 /* InfoPlist.strings */; };
 		92D40F581919B92600C86E21 /* Flight_of_a_BallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D40F571919B92600C86E21 /* Flight_of_a_BallTests.m */; };
+		92D40F621919BA0800C86E21 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D40F611919BA0800C86E21 /* SpriteKit.framework */; };
+		92D40F651919BA6F00C86E21 /* A5005MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D40F641919BA6F00C86E21 /* A5005MainMenuScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		92D40F531919B92600C86E21 /* Flight of a BallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flight of a BallTests-Info.plist"; sourceTree = "<group>"; };
 		92D40F551919B92600C86E21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92D40F571919B92600C86E21 /* Flight_of_a_BallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flight_of_a_BallTests.m; sourceTree = "<group>"; };
+		92D40F611919BA0800C86E21 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		92D40F631919BA6F00C86E21 /* A5005MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A5005MainMenuScene.h; sourceTree = "<group>"; };
+		92D40F641919BA6F00C86E21 /* A5005MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A5005MainMenuScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D40F621919BA0800C86E21 /* SpriteKit.framework in Frameworks */,
 				92D40F2E1919B92600C86E21 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,7 @@
 		92D40F2C1919B92600C86E21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92D40F611919BA0800C86E21 /* SpriteKit.framework */,
 				92D40F2D1919B92600C86E21 /* Cocoa.framework */,
 				92D40F4C1919B92600C86E21 /* XCTest.framework */,
 				92D40F2F1919B92600C86E21 /* Other Frameworks */,
@@ -118,6 +125,8 @@
 				92D40F3F1919B92600C86E21 /* A5005AppDelegate.h */,
 				92D40F401919B92600C86E21 /* A5005AppDelegate.m */,
 				92D40F421919B92600C86E21 /* MainMenu.xib */,
+				92D40F631919BA6F00C86E21 /* A5005MainMenuScene.h */,
+				92D40F641919BA6F00C86E21 /* A5005MainMenuScene.m */,
 				92D40F451919B92600C86E21 /* Images.xcassets */,
 				92D40F341919B92600C86E21 /* Supporting Files */,
 			);
@@ -255,6 +264,7 @@
 			files = (
 				92D40F411919B92600C86E21 /* A5005AppDelegate.m in Sources */,
 				92D40F3A1919B92600C86E21 /* main.m in Sources */,
+				92D40F651919BA6F00C86E21 /* A5005MainMenuScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

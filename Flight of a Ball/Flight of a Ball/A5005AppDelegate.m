@@ -12,7 +12,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [self.skView presentScene:[[A5005MainMenuScene alloc] initWithSize:self.skView.frame.size]];
 }
 
 @end

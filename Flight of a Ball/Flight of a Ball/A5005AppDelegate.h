@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <SpriteKit/SpriteKit.h>
+#import "A5005MainMenuScene.h"
 
 @interface A5005AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+
+@property (weak) IBOutlet SKView *skView;
 
 @end
