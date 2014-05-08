@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923F3FAB191AFBCC001D65B3 /* A5005LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 923F3FAA191AFBCC001D65B3 /* A5005LogoView.m */; };
+		9250DD451919C21800EAA364 /* A5005MainMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250DD441919C21800EAA364 /* A5005MainMenuView.m */; };
 		92D40F2E1919B92600C86E21 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D40F2D1919B92600C86E21 /* Cocoa.framework */; };
 		92D40F381919B92600C86E21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92D40F361919B92600C86E21 /* InfoPlist.strings */; };
 		92D40F3A1919B92600C86E21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D40F391919B92600C86E21 /* main.m */; };
@@ -19,7 +21,7 @@
 		92D40F561919B92600C86E21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92D40F541919B92600C86E21 /* InfoPlist.strings */; };
 		92D40F581919B92600C86E21 /* Flight_of_a_BallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D40F571919B92600C86E21 /* Flight_of_a_BallTests.m */; };
 		92D40F621919BA0800C86E21 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D40F611919BA0800C86E21 /* SpriteKit.framework */; };
-		92D40F651919BA6F00C86E21 /* A5005MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D40F641919BA6F00C86E21 /* A5005MainMenuScene.m */; };
+		92D40F681919BBE200C86E21 /* A5005GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D40F671919BBE200C86E21 /* A5005GameButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		923F3FA9191AFBCC001D65B3 /* A5005LogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A5005LogoView.h; sourceTree = "<group>"; };
+		923F3FAA191AFBCC001D65B3 /* A5005LogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A5005LogoView.m; sourceTree = "<group>"; };
+		9250DD431919C21800EAA364 /* A5005MainMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A5005MainMenuView.h; sourceTree = "<group>"; };
+		9250DD441919C21800EAA364 /* A5005MainMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A5005MainMenuView.m; sourceTree = "<group>"; };
 		92D40F2A1919B92600C86E21 /* Flight of a Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flight of a Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D40F2D1919B92600C86E21 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		92D40F301919B92600C86E21 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -53,8 +59,8 @@
 		92D40F551919B92600C86E21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92D40F571919B92600C86E21 /* Flight_of_a_BallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flight_of_a_BallTests.m; sourceTree = "<group>"; };
 		92D40F611919BA0800C86E21 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		92D40F631919BA6F00C86E21 /* A5005MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A5005MainMenuScene.h; sourceTree = "<group>"; };
-		92D40F641919BA6F00C86E21 /* A5005MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A5005MainMenuScene.m; sourceTree = "<group>"; };
+		92D40F661919BBE200C86E21 /* A5005GameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A5005GameButton.h; sourceTree = "<group>"; };
+		92D40F671919BBE200C86E21 /* A5005GameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A5005GameButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +131,12 @@
 				92D40F3F1919B92600C86E21 /* A5005AppDelegate.h */,
 				92D40F401919B92600C86E21 /* A5005AppDelegate.m */,
 				92D40F421919B92600C86E21 /* MainMenu.xib */,
-				92D40F631919BA6F00C86E21 /* A5005MainMenuScene.h */,
-				92D40F641919BA6F00C86E21 /* A5005MainMenuScene.m */,
+				92D40F661919BBE200C86E21 /* A5005GameButton.h */,
+				92D40F671919BBE200C86E21 /* A5005GameButton.m */,
+				9250DD431919C21800EAA364 /* A5005MainMenuView.h */,
+				9250DD441919C21800EAA364 /* A5005MainMenuView.m */,
+				923F3FA9191AFBCC001D65B3 /* A5005LogoView.h */,
+				923F3FAA191AFBCC001D65B3 /* A5005LogoView.m */,
 				92D40F451919B92600C86E21 /* Images.xcassets */,
 				92D40F341919B92600C86E21 /* Supporting Files */,
 			);
@@ -262,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				923F3FAB191AFBCC001D65B3 /* A5005LogoView.m in Sources */,
 				92D40F411919B92600C86E21 /* A5005AppDelegate.m in Sources */,
+				92D40F681919BBE200C86E21 /* A5005GameButton.m in Sources */,
+				9250DD451919C21800EAA364 /* A5005MainMenuView.m in Sources */,
 				92D40F3A1919B92600C86E21 /* main.m in Sources */,
-				92D40F651919BA6F00C86E21 /* A5005MainMenuScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +487,7 @@
 				92D40F5D1919B92600C86E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92D40F5E1919B92600C86E21 /* Build configuration list for PBXNativeTarget "Flight of a BallTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +496,7 @@
 				92D40F601919B92600C86E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

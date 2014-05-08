@@ -651,17 +651,55 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1366" height="746"/>
-            <view key="contentView" id="372" customClass="SKView">
+            <view key="contentView" id="372" customClass="A5005MainMenuView">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8qn-eC-YuN">
+                        <rect key="frame" x="-6" y="224" width="492" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="X7T-FB-D7a" customClass="A5005GameButton">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="startGame:" target="494" id="2dy-ht-bvM"/>
+                        </connections>
+                    </button>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="iOI-t2-z0p" customClass="A5005LogoView">
+                        <rect key="frame" x="0.0" y="272" width="480" height="88"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iOI-t2-z0p" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="Kja-AP-ShM"/>
+                    <constraint firstItem="8qn-eC-YuN" firstAttribute="top" secondItem="iOI-t2-z0p" secondAttribute="bottom" constant="20" id="LVl-Va-MhY"/>
+                    <constraint firstItem="8qn-eC-YuN" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="PZk-8q-Flz"/>
+                    <constraint firstItem="8qn-eC-YuN" firstAttribute="top" secondItem="372" secondAttribute="top" constant="108" id="WgT-Lc-1ll"/>
+                    <constraint firstItem="iOI-t2-z0p" firstAttribute="top" secondItem="372" secondAttribute="top" id="erK-0Y-WDW"/>
+                    <constraint firstAttribute="trailing" secondItem="iOI-t2-z0p" secondAttribute="trailing" id="wqB-hk-8ra"/>
+                    <constraint firstAttribute="trailing" secondItem="8qn-eC-YuN" secondAttribute="trailing" id="x7U-qV-enk"/>
+                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="A5005AppDelegate">
             <connections>
-                <outlet property="skView" destination="372" id="XVF-0F-A4J"/>
+                <outlet property="game" destination="YbY-ra-p2M" id="8sC-XM-gjR"/>
+                <outlet property="playButton" destination="8qn-eC-YuN" id="Elu-wS-dfv"/>
+                <outlet property="skView" destination="gFs-jq-O7o" id="S6K-f1-aAk"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="YbY-ra-p2M">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="121" y="123" width="482" height="390"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1366" height="746"/>
+            <view key="contentView" id="gFs-jq-O7o" customClass="SKView">
+                <rect key="frame" x="0.0" y="0.0" width="482" height="390"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+        </window>
     </objects>
 </document>

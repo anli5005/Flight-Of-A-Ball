@@ -8,12 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 #import <SpriteKit/SpriteKit.h>
-#import "A5005MainMenuScene.h"
 
 @interface A5005AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *game;
 
 @property (weak) IBOutlet SKView *skView;
+
+- (IBAction)startGame:(id)sender;
+
+@property (weak) IBOutlet NSButton *playButton;
 
 @end
